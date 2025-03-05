@@ -32,7 +32,7 @@ export class CoursesController {
   }
 
   @Put(':id')
-  update(@Param('id') id: number, updateCourseDTO: UpdateCourseDTO) {
+  update(@Param('id') id: number, @Body() updateCourseDTO: UpdateCourseDTO) {
     console.log(updateCourseDTO);
     return this.coursesService.update(id, updateCourseDTO);
   }
