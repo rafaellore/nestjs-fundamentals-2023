@@ -16,6 +16,11 @@ export class CreateTagsTable1741464523004 implements MigrationInterface {
             name: 'name',
             type: 'varchar',
           },
+          {
+            name: 'created_at',
+            type: 'timestamp',
+            default: 'CURRENT_TIMESTAMP',
+          },
         ],
       }),
     );
